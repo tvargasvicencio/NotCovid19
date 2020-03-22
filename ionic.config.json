@@ -1,0 +1,7 @@
+{
+  "name": "NotCovid19",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
