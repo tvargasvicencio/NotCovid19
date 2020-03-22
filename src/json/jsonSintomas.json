@@ -1,0 +1,12 @@
+{
+    "sintoma1":
+        {"id":1,
+        "pregunta":"¿Tiene tos?"},
+    "sintoma2":
+        {"id":2,
+            "pregunta":"¿Tiene fiebre (sobre 38 °C)?"},
+    "sintoma3":{
+        "id":3,
+        "pregunta":"¿Ha tenido dificultad para respirar?"
+    }
+}
