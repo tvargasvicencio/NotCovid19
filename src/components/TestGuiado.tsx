@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import { IonSlides, IonSlide, IonContent, IonCol, IonButton } from '@ionic/react';
+import Modal from '../components/Modal';
 import jsonSintomas from '../json/jsonSintomas.json';
 import textosTestGuiado from '../json/es.json';
 
 class TestGuiado extends Component {
     // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
     private slidesRef = React.createRef<any>();
+    refers = new Array();
     constructor(props: any){
         super(props);
         this.state = {
@@ -14,6 +16,7 @@ class TestGuiado extends Component {
             sintoma3: false,
           }
         this.ionSlidesDidLoad = this.ionSlidesDidLoad.bind(this);
+        
     }
 
     componentDidUpdate(){
@@ -27,15 +30,20 @@ class TestGuiado extends Component {
 
     generaSlides(){
         let slides: JSX.Element[] = [];
+        let cont = 0;
         Object.entries(jsonSintomas).forEach(([key, value]) => {
             console.log(`${key} ${value}`);
+            let refAux = React.createRef<any>();
+            this.refers.push(refAux);
             var slide= (
                 <IonSlide /*key={parseInt(slide)}*/>
                     <IonCol>
                         {/*<h1>{textosTestGuiado[{slide.pregunta}]}</h1>*/}
+                    <Modal ref={refAux} texto={value.ayuda} />
                         <h1>{value.pregunta}</h1>
                         <IonButton onClick={(e) => this.asignaSintoma(key,true)} >Si</IonButton>
                         <IonButton onClick={(e) => this.asignaSintoma(key,false)}>No</IonButton>
+                        <IonButton onClick={(e) => refAux.current.setShowModal(true)}>Ayuda</IonButton>
                     </IonCol>
                 </IonSlide>
             )

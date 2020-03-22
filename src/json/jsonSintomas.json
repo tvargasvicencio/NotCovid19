@@ -1,12 +1,15 @@
 {
     "sintoma1":
         {"id":1,
-        "pregunta":"¿Tiene tos?"},
+        "pregunta":"¿Tiene tos?",
+        "ayuda": "Tos: Expulsión brusca, violenta y ruidosa del aire contenido en los pulmones producida por la irritación de las vías respiratorias o para mantener el aire de los pulmones limpio de sustancias extrañas."},
     "sintoma2":
         {"id":2,
-            "pregunta":"¿Tiene fiebre (sobre 38 °C)?"},
+        "pregunta":"¿Tiene fiebre (sobre 38 °C)?",
+        "ayuda":"Fiebre: Se considera fiebre si es superior a 37,5 °C cuando se mide con el termómetro en la boca o superior a 38 °C cuando se mide con un termómetro axilar. (recuerde lavar bien el termómetro antes de utilizarlo)."},
     "sintoma3":{
         "id":3,
-        "pregunta":"¿Ha tenido dificultad para respirar?"
+        "pregunta":"¿Ha tenido dificultad para respirar?",
+        "ayuda":"Dificultad para respirar: Incomodidad al respirar,Incapacidad para obtener la cantidad de aire suficiente, sensación de asfixia, opresión, ahogo o sofocación."
     }
 }
