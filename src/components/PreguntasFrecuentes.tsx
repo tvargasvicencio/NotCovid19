@@ -37,7 +37,11 @@ class PreguntasFrecuentes extends React.Component<{},  SintomasInterface> {
                         <IonLabel>{value.pregunta}</IonLabel>
                     </IonItem>
                     }>
-                        <IonItem><p>{ ReactHtmlParser(value.respuesta)}</p></IonItem>
+                        <IonItem><p>
+                            { value.respuesta.map((linea, i) => {
+                                return ReactHtmlParser(linea+"<br/><br/>")
+                            })}
+                            </p></IonItem>
                 </Collapsible>
             )
             itemsFaqs.push(pregunta);

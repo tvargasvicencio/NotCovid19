@@ -14,10 +14,10 @@ const Tab1: React.FC = () => {
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">¡Bienvenido!</IonTitle>
+            <IonTitle size="large">CoronaChecker</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name="¡Bienvenido!" />
       </IonContent>
     </IonPage>
   );

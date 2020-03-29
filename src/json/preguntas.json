@@ -2,30 +2,79 @@
     "pregunta1":{
         "id":1,
         "pregunta":"¿Qué es el COVID-19? ",
-        "respuesta":"Es una enfermedad infecciosa causada por el coronavirus recientemente descubierto (SARS-CoV-2) que produce síntomas similares a la gripe y en algunos casos Infección Respiratoria Aguda Grave."
+        "respuesta":["Es una enfermedad infecciosa causada por el coronavirus recientemente descubierto (SARS-CoV-2) que produce síntomas similares a la gripe y en algunos casos Infección Respiratoria Aguda Grave."]
     },
     "pregunta2":{
         "id":2,
         "pregunta":"¿Qué es aislamiento domiciliario (cuarentena)? ",
-        "respuesta":"Es una restricción de las actividades que se realizan habitualmente fuera del domicilio, para aquellas personas que estuvieron expuestas a un agente infeccioso, y que actualmente no tienen síntomas. Pudiendo desarrollar la enfermedad y por lo tanto transmitirla a otras personas."
+        "respuesta":["Es una restricción de las actividades que se realizan habitualmente fuera del domicilio, para aquellas personas que estuvieron expuestas a un agente infeccioso, y que actualmente no tienen síntomas. Pudiendo desarrollar la enfermedad y por lo tanto transmitirla a otras personas."]
     },
     "pregunta3":{
         "id":3,
         "pregunta":"¿Por qué me indicaron estar en aislamiento domiciliario (cuarentena)? ",
-        "respuesta":"1. Porque he regresado de un país que tiene un brote activo de COVID-19. <br/>2. Porque estuve en contacto estrecho con un caso confirmado de COVID-19. "
+        "respuesta":["1. Porque he regresado de un país que tiene un brote activo de COVID-19. <br/>2. Porque estuve en contacto estrecho con un caso confirmado de COVID-19. "]
     },
     "pregunta4":{
         "id":4,
         "pregunta":"¿Para qué debo estar en aislamiento domiciliario (cuarentena)? ",
-        "respuesta":"1. Para prevenir que en caso de enfermarme de COVID-19 contagie a otras personas. <br/> 2. Para acceder al tratamiento en caso de presentar la enfermedad. "
+        "respuesta":["1. Para prevenir que en caso de enfermarme de COVID-19 contagie a otras personas. <br/> 2. Para acceder al tratamiento en caso de presentar la enfermedad. "]
     },
     "pregunta5":{
         "id":5,
         "pregunta":"¿Cuánto durará el aislamiento domiciliario (cuarentena)? ",
-        "respuesta":"El aislamiento domiciliario (cuarentena) durará 14 días, desde que estuvo en contacto con una persona con COVID-19 en su periodo sintomático o desde la fecha de salida de un país que tiene un brote activo de COVID-19. El tiempo del aislamiento domiciliario (cuarentena) está determinado por el periodo de incubación del SARS-CoV-2."
+        "respuesta":["El aislamiento domiciliario (cuarentena) durará 14 días, desde que estuvo en contacto con una persona con COVID-19 en su periodo sintomático o desde la fecha de salida de un país que tiene un brote activo de COVID-19. El tiempo del aislamiento domiciliario (cuarentena) está determinado por el periodo de incubación del SARS-CoV-2."]
+    },
+    "pregunta6":{
+        "id":6,
+        "pregunta":"¿Qué debo hacer si tengo síntomas de COVID-19?",
+        "respuesta":["Si la persona viene llegando a Chile desde el extranjero o estuvo en contacto directo con alguien contagiado y presenta síntomas, debe acercarse inmediatamente al centro de urgencia más cercano (cesfam, hospital o clínica). Una vez allí se activará el protocolo donde se realizará el examen para confirmar o descartar el virus. Importante: si la persona tiene los síntomas, debe usar mascarilla y tratar de evitar el transporte público (sobre todo el Metro en horario punta) para no exponer a los demás. Si el test da positivo, será enviada a su casa para proceder al aislamiento, ya que muy pocos casos son los que requieren internación en el centro de salud."]
+    },
+    "pregunta7":{
+    	"id":7,
+    	"pregunta":"¿Cómo debe ser el aislamiento en la casa?",
+        "respuesta":["Los médicos pueden enviar a los pacientes leves a recuperarse en su casa, bajo las siguientes condiciones:",
+            "- El contagiado debe dormir en una pieza solo. Si no se puede, que tenga al menos un metro de distancia con otros. La habitación debe tener ventilación.",
+        "- Moverse lo menos posible por la casa.",
+        "- Tener sus propios utensilios para comer (vasos, bombillas, cubiertos, etc.) y no compartirlos. Se deben lavar con detergente.",
+         "- Preferir toallas de papel y usar una toalla individual.",
+         "- La persona que atienda al enfermo debe usar mascarilla y lavarse las manos tras cada contacto. En caso de tener contacto con fluidos corporales, debe usar guantes desechables y ojalá delantal plástico.",
+        "- Los desechos deben ponerse en una bolsa plástica, cerrarla y botarla.",
+        "- El baño debe ser desinfectado al menos una vez al día con cloro diluido en agua (450 cc de agua y 50 cc de cloro) y también desinfectar las La ropa sucia y todos los textiles usados por el paciente se deben poner en bolsas plásticas y no se deben agitar. Hay que lavarlos a máquina a 60-90 ºC con detergente normal y secar bien.",
+        "- Todos quienes viven con el paciente deben ser monitoreados por la Autoridad Sanitaria."]
+    },
+    "pregunta8":{
+        "id":8,
+        "pregunta":"¿Es necesario que todas las personas usen mascarillas?",
+        "respuesta":["No. La mascarilla solo sirve si una persona tiene síntomas respiratorios como tos o fiebre, las personas sanas no necesitan usarla. En los hospitales se recomienda que la usen quienes estén a cargo del cuidado de los enfermos, para reducir la posibilidad de transmitir el virus al personal de salud o a otros pacientes."]
+    },
+    "pregunta9":{
+    	"id":9,
+        "pregunta":"¿Cuánto cuestan los exámenes para detectar el COVID-19?",
+        "respuesta":["El examen es gratuito para todos los usuarios de Fonasa. Los exámenes realizados con objetivo de manejo de salud pública, como por ejemplo, los que se tomen en el aeropuerto tampoco tienen costo. Por otra parte, las personas que aunque no sean casos sospechosos, pero aún así quieran hacerse el examen, éste tiene cobertura de Fonasa, es decir, el costo máximo no será superior a los $14.040 como copago, si se realiza el test en una clínica bajo el sistema de Modalidad de Libre Elección, en convenio con Fonasa."]
+    },
+    "pregunta10":{
+        "id":10,
+        "pregunta":"Si vengo llegando a Chile, ¿qué debo hacer en el aeropuerto?",
+        "respuesta":["A partir del miércoles 18 de marzo, se cerrarán todas las fronteras terrestres, marítimas y áreas de nuestro país para el tránsito de personas extranjeras. Esto no afectará la entrada y salida de carga ni de los transportistas, para continuar garantizando el abastecimiento normal. Los nacionales chilenos y los residentes permanentes en Chile, que provengan de lugares de alto riesgo, podrán ingresar a nuestro país sometiéndose a la Aduana Sanitaria y a una cuarentena obligatoria de 14 días.",
+        "Países de alto riesgo:",
+        "Irán, China, Alemania, Francia, España, Italia, Corea del Sur, Japón, Perú, Bolivia y Argentina."]
+    },
+    "pregunta11":{
+        "id":11,
+        "pregunta":"¿Las isapres deben entregar cobertura para el COVID-19?",
+        "respuesta":["Sí. Según la Superintendencia de Salud, las Isapres al ser parte de la seguridad social y de la protección del derecho a la salud, no podrán, en ningún caso, excluir la cobertura a la enfermedad aunque haya sido declarada pandemia."]
+        },
+    "pregunta12":{
+        "id":12,
+        "pregunta":"Si soy diagnosticado, ¿tengo derecho a licencia médica?",
+        "respuesta":["Sí, los trabajadores diagnosticados con COVID-19 tendrán derecho a licencia y a todos los derechos que eso significa. Sin embargo. Se deberá evaluar si el contagio se dio en una situación laboral o externa. De ser externa, la institución previsional de salud (Isapre o Fonasa). De ser laboral, los administradores de seguros y accidentes profesionales deberán hacerse cargo.Infórmate más en www.direcciondeltrabajo.cl o llamando al 600 450 4000."]
+    },
+        "pregunta13":{
+        "id":13,
+        "pregunta":"¿Puede mi empleador facilitar medidas alternativas de trabajo en caso de riesgo de contagio?",
+        "respuesta":["El empleador está obligado a tomar todas las medidas para proteger la salud de los trabajadores, informando los riesgos y manteniendo las condiciones de higiene y seguridad con el fin de evitar la propagación del virus. Además, el empleador y el trabajador podrán acordar mutuamente trabajar a distancia u otro medio alternativo."]
     }
 }
-
 
 
 

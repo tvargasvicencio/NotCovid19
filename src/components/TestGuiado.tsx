@@ -107,20 +107,70 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
         let covid19 : number = 0;
         let resfriado : number = 0;
         let gripe: number = 0;
-        if (id in [1,2,3,4,9]) {
-            covid19 = 1;
+        if (valor===true) {
+            if (id in [1,2,3,4,9]) {
+                covid19 = 1;
+            }
+            if (id in [1,7,8]) {
+                resfriado = 1;
+            }
+            if (id in [1,2,5,6,7,10,11,12]) {
+                gripe = 1;
+            }
         }
         this.setState({
             ...this.state,
             [sintoma]: valor,
-            covid19: this.state.covid19 + covid19
+            covid19: this.state.covid19 + covid19,
+            resfriado: this.state.resfriado + resfriado,
+            gripe: this.state.gripe + gripe
+        })
+    }
+
+    reiniciarTest(){
+        this.slidesRef.current.swiper.slideTo(0);
+        this.setState({
+            ...this.state,
+            covid19: 0,
+            resfriado: 0,
+            gripe: 0
         })
     }
 
     calculaResultado(){
         // sintoma3 es el más importante, dificultad para respirar
         if (this.state.sintoma3 === true) {
-            
+            if (this.state.covid19>=4) {
+                return (<h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Es probable que tengas Coronavirus, acude al médico.</h1>)
+            }
+            else{
+                return (
+                    <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Llama para preguntar.</h1>
+                )
+            }
+        }
+        else{
+            if (this.state.sintoma1 === true && this.state.sintoma2 === true) {
+                if (this.state.covid19 >= this.state.gripe) {
+                    return (
+                        <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, pero tienes fiebre y tos. Llama para preguntar.</h1>
+                    )
+                }
+                else{
+                    return (
+                        <h1>Tienes tos y fiebre, pero tus síntomas se parecen más a los de la gripe. Llama para preguntar.</h1>
+                    )
+                }
+            }
+            if (this.state.gripe > this.state.covid19 && this.state.gripe > this.state.resfriado) {
+                return (<h1>Tienes {this.state.gripe} síntomas de gripe, quédate en casa tranquilo. </h1>)
+            }
+            if (this.state.resfriado > this.state.covid19 && this.state.resfriado > this.state.gripe) {
+                return (<h1>Tienes {this.state.resfriado} síntomas de resfriado, quédate en casa tranquilo. </h1>)
+            }
+            if (this.state.covid19 === this.state.gripe && this.state.gripe === this.state.resfriado) {
+                return (<h1>Estás bien, quédate en casa tranquilo. </h1>)
+            }
         }
     }
 
@@ -135,8 +185,18 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
                 <IonSlides ref={this.slidesRef} pager={false} options={this.slideOpts} onIonSlidesDidLoad={this.ionSlidesDidLoad} >
                     {this.generaSlides()}
                     <IonSlide /*key={parseInt(slide)}*/>
-                        <h1>RESULTADO</h1>
-                        <IonButton>Reiniciar</IonButton>
+                        <IonRow>
+                            <IonCol>
+                                {this.calculaResultado()}
+                            </IonCol>
+                        </IonRow>
+                        <br></br>
+                        <IonRow>
+                            <IonCol>
+                                <IonButton onClick={(e) => this.reiniciarTest()}>Reiniciar</IonButton>
+                            </IonCol>
+                        </IonRow>
+                        
                     </IonSlide>
                 </IonSlides>
             </IonContent>
