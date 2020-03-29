@@ -11,5 +11,50 @@
         "id":3,
         "pregunta":"¿Ha tenido dificultad para respirar?",
         "ayuda":"Dificultad para respirar: Incomodidad al respirar,Incapacidad para obtener la cantidad de aire suficiente, sensación de asfixia, opresión, ahogo o sofocación."
+    },
+    "sintoma4":{
+        "id":4,
+        "pregunta":"¿Siente cansancio y/o debilidad?",
+        "ayuda":"Debilidad: Es la reducción de la fuerza en uno o más músculos. Cansancio: Sentimiento de debilidad, pesadez, agotamiento o sin energía."
+    },
+    "sintoma5":{
+        "id":5,
+        "pregunta":"¿Tiene Mucosidad Nasal (mocos)?",
+        "ayuda":"Mocos: El moco (o mucosidad) es una sustancia que es segregado por las membranas mucosas, en este caso en particular, en la membrana la nasal."
+    },
+    "sintoma6":{
+        "id":6,
+        "pregunta":"¿Tiene Congestión Nasal?",
+        "ayuda":"Congestión Nasal: La congestión nasal o 'nariz tapada' se produce cuando los tejidos nasales y adyacentes y los vasos sanguíneos se inflaman con el exceso de líquido y causan una sensación de 'congestión'. La congestión nasal puede o no estar acompañada de una secreción nasal (mocos)."
+    },
+    "sintoma7":{
+        "id":7,
+        "pregunta":"¿Ha tenido estornudos?",
+        "ayuda":"Estornudos: Expulsión violenta y ruidosa del aire de los pulmones que se realiza por la nariz y la boca mediante un movimiento involuntario y repentino del diafragma."
+    },
+    "sintoma8":{
+        "id":8,
+        "pregunta":"¿Ha sentido dolor o malestar de garganta?",
+        "ayuda":"Dolor de garganta: El dolor de garganta es dolor, carraspera o irritación de la garganta que a menudo empeora al tragar."
+    },
+    "sintoma9":{
+        "id":9,
+        "pregunta":"¿Tiene flemas?",
+        "ayuda":"Flemas: Mucosidad pegajosa, procedente de las vías respiratorias que se arroja por la boca."
+    },
+    "sintoma10":{
+        "id":10,
+        "pregunta":"¿Ha tenido vómitos o ganas de vomitar?",
+        "ayuda":"Vómito: Expulsión violenta por la boca de lo que está contenido en el estómago."
+    },
+    "sintoma11":{
+        "id":11,
+        "pregunta":"¿Ha tenido diarrea?",
+        "ayuda":"Diarrea: Alteración intestinal que se caracteriza por la mayor frecuencia, fluidez y, a menudo, volumen de las deposiciones."
+    },
+    "sintoma12":{
+        "id":12,
+        "pregunta":"¿Siente dolor de huesos?",
+        "ayuda":"Dolor de huesos: Es una dolencia u otra molestia en uno o más huesos."
     }
 }
