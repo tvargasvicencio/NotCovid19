@@ -1,0 +1,38 @@
+{
+    "pregunta1":{
+        "id":1,
+        "pregunta":"¿Qué es el COVID-19? ",
+        "respuesta":"Es una enfermedad infecciosa causada por el coronavirus recientemente descubierto (SARS-CoV-2) que produce síntomas similares a la gripe y en algunos casos Infección Respiratoria Aguda Grave."
+    },
+    "pregunta2":{
+        "id":2,
+        "pregunta":"¿Qué es aislamiento domiciliario (cuarentena)? ",
+        "respuesta":"Es una restricción de las actividades que se realizan habitualmente fuera del domicilio, para aquellas personas que estuvieron expuestas a un agente infeccioso, y que actualmente no tienen síntomas. Pudiendo desarrollar la enfermedad y por lo tanto transmitirla a otras personas."
+    },
+    "pregunta3":{
+        "id":3,
+        "pregunta":"¿Por qué me indicaron estar en aislamiento domiciliario (cuarentena)? ",
+        "respuesta":"1. Porque he regresado de un país que tiene un brote activo de COVID-19. <br/>2. Porque estuve en contacto estrecho con un caso confirmado de COVID-19. "
+    },
+    "pregunta4":{
+        "id":4,
+        "pregunta":"¿Para qué debo estar en aislamiento domiciliario (cuarentena)? ",
+        "respuesta":"1. Para prevenir que en caso de enfermarme de COVID-19 contagie a otras personas. <br/> 2. Para acceder al tratamiento en caso de presentar la enfermedad. "
+    },
+    "pregunta5":{
+        "id":5,
+        "pregunta":"¿Cuánto durará el aislamiento domiciliario (cuarentena)? ",
+        "respuesta":"El aislamiento domiciliario (cuarentena) durará 14 días, desde que estuvo en contacto con una persona con COVID-19 en su periodo sintomático o desde la fecha de salida de un país que tiene un brote activo de COVID-19. El tiempo del aislamiento domiciliario (cuarentena) está determinado por el periodo de incubación del SARS-CoV-2."
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
