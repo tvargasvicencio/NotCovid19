@@ -77,15 +77,19 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
                         <IonCol>
                         <h2>
                             {value.pregunta} <br></br>
-                            <IonButton size="small" onClick={(e) => refAux.current.setShowModal(true)}>
-                                <IonIcon icon={helpCircleOutline} />Ayuda
-                            </IonButton>
+                            
                         </h2>
                         
                         </IonCol>
                         <IonCol>
                         <IonButton size="large" onClick={(e) => this.asignaSintoma(key,true,value.id)} >Si</IonButton>
                         <IonButton size="large" onClick={(e) => this.asignaSintoma(key,false,value.id)}>No</IonButton>
+                        <br></br>
+                        </IonCol>
+                        <IonCol>
+                            <IonButton size="small" onClick={(e) => refAux.current.setShowModal(true)}>
+                                <IonIcon icon={helpCircleOutline} />Ayuda
+                            </IonButton>
                         </IonCol>
                     </IonGrid>
                 </IonSlide>
@@ -130,22 +134,37 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
     reiniciarTest(){
         this.slidesRef.current.swiper.slideTo(0);
         this.setState({
-            ...this.state,
+            sintoma1: false,
+            sintoma2: false,
+            sintoma3: false,
+            sintoma4: false,
+            sintoma5: false,
+            sintoma6: false,
+            sintoma7: false,
+            sintoma8: false,
+            sintoma9: false,
+            sintoma10: false,
+            sintoma11: false,
+            sintoma12: false,
             covid19: 0,
+            gripe: 0,
             resfriado: 0,
-            gripe: 0
-        })
+          })
     }
 
     calculaResultado(){
         // sintoma3 es el más importante, dificultad para respirar
         if (this.state.sintoma3 === true) {
             if (this.state.covid19>=4) {
-                return (<h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Es probable que tengas Coronavirus, acude al médico.</h1>)
+                return (<h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Es probable que tengas Coronavirus, 
+                    acude al médico.<br/><br/> Para dudas o preguntas contacte a los teléfonos de emergencia provisto por el gobierno de su país 
+                    (Chile: 600 360 77 77 Sitio web: www.saludresponde.cl)</h1>)
             }
             else{
                 return (
-                    <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Llama para preguntar.</h1>
+                    <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, incluyendo dificultad respiratoria. Llama para preguntar.
+                    <br/><br/> Para dudas o preguntas contacte a los teléfonos de emergencia provisto por el gobierno de su país 
+                    (Chile: 600 360 77 77 Sitio web: www.saludresponde.cl)</h1>
                 )
             }
         }
@@ -153,12 +172,16 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
             if (this.state.sintoma1 === true && this.state.sintoma2 === true) {
                 if (this.state.covid19 >= this.state.gripe) {
                     return (
-                        <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, pero tienes fiebre y tos. Llama para preguntar.</h1>
+                        <h1>Tienes {this.state.covid19} de 5 síntomas de Coronavirus, pero tienes fiebre y tos. Llama para preguntar.
+                        <br/><br/> Para dudas o preguntas contacte a los teléfonos de emergencia provisto por el gobierno de su país 
+                        (Chile: 600 360 77 77 Sitio web: www.saludresponde.cl)</h1>
                     )
                 }
                 else{
                     return (
-                        <h1>Tienes tos y fiebre, pero tus síntomas se parecen más a los de la gripe. Llama para preguntar.</h1>
+                        <h1>Tienes tos y fiebre, pero tus síntomas se parecen más a los de la gripe. Llama para preguntar.
+                        <br/><br/> Para dudas o preguntas contacte a los teléfonos de emergencia provisto por el gobierno de su país 
+                        (Chile: 600 360 77 77 Sitio web: www.saludresponde.cl)</h1>
                     )
                 }
             }
@@ -185,6 +208,7 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
                 <IonSlides ref={this.slidesRef} pager={false} options={this.slideOpts} onIonSlidesDidLoad={this.ionSlidesDidLoad} >
                     {this.generaSlides()}
                     <IonSlide /*key={parseInt(slide)}*/>
+                    <IonGrid>
                         <IonRow>
                             <IonCol>
                                 {this.calculaResultado()}
@@ -193,10 +217,11 @@ class TestGuiado extends React.Component<{},  SintomasInterface> {
                         <br></br>
                         <IonRow>
                             <IonCol>
+                                <br></br>
                                 <IonButton onClick={(e) => this.reiniciarTest()}>Reiniciar</IonButton>
                             </IonCol>
                         </IonRow>
-                        
+                    </IonGrid>
                     </IonSlide>
                 </IonSlides>
             </IonContent>

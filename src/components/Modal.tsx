@@ -32,7 +32,7 @@ class Modal extends React.Component<{texto:String},  {showModal:boolean}> {
         <IonContent>
           <IonModal isOpen={this.state.showModal}>
             <p>{texto}</p>
-            <IonButton onClick={() => this.setShowModal(false)}>Close Modal</IonButton>
+            <IonButton onClick={() => this.setShowModal(false)}>Cerrar</IonButton>
           </IonModal>
           <IonButton onClick={() => this.setShowModal(true)}>Show Modal</IonButton>
         </IonContent>
